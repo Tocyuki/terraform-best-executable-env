@@ -31,3 +31,11 @@ jobs:
       run: terraform validate
       working-directory: terraform
       
+    # - name: Terraform Plan
+    #   run: terraform plan
+    #   working-directory: terraform
+
+    # - name: Terraform Apply
+    #   if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+    #   run: terraform apply -auto-approve
+    #   working-directory: terraform
