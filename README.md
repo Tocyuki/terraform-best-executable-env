@@ -1,3 +1,5 @@
+![](https://github.com/Tocyuki/terraform-best-executable-env/workflows/Terraform/badge.svg)
+
 # Terraform Best Executable Environment
 The Best of Executable Environment of Terraform for you!!
 
@@ -26,7 +28,7 @@ $ make apply
 $ make destroy
 ```
 
-### terraform fmt
+### terraform fmt check & validate
 ```
-$ make fmt
+$ make check
 ```
