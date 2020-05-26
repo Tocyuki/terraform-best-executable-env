@@ -1,4 +1,4 @@
-.PHONY: init plan apply destroy fmt
+.PHONY: init plan apply destroy check
 
 init:
 	docker-compose run --rm terraform fmt -recursive
@@ -16,5 +16,7 @@ destroy:
 	docker-compose run --rm terraform fmt -recursive
 	docker-compose run --rm terraform destroy
 
-fmt:
+check:
 	docker-compose run --rm terraform fmt -recursive
+	docker-compose run --rm terraform fmt -check
+	docker-compose run --rm terraform validate
